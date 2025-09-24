@@ -16,7 +16,7 @@
 set -euo pipefail
 module reset
 module load Python/3.11.3-GCCcore-12.3.0       # load the same/compatible module on Falcon
-source /home/andrew03/pythonRepos/example_arc_repo/ex_311_a30_normal_q/bin/activate
+source /home/andrew03/pythonRepos/example_arc_repo/venvs/ex_311_a30_normal_q/bin/activate
 
 export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
 export MKL_NUM_THREADS=$SLURM_CPUS_PER_TASK
